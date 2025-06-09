@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авиакатастрофы (1980-2025)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <h1>Авиакатастрофы (1980-2025)</h1>
+        <br>
+        <hr><br>
+        <section id="filter">
+            <label for="year">Выберите год:</label>
+            <select id="year" onchange="filterByYear()">
+                <option value="all">Все</option>
+            </select>
+        </section>
+    </header>
+
+    <div class="content">
+        <section id="disasters">
+            <h2>Список катастроф</h2>
+            <ul id="disastersList"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
